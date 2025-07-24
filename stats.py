@@ -12,14 +12,12 @@ def chars_in_book(file_contents):
     for char in file_contents:
         # print("I'm getting executed till here")
         # time.sleep(5)
-        print(char)
         if char.isalpha() == True:
             char = char.lower()
             if char not in char_count:
                 char_count[char] = 0
             char_count[char] += 1
-        print(char_count)
-        return char_count
+    return char_count
 
 def dict_to_list(char_count_dict):
     char_list = []

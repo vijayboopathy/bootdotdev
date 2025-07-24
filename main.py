@@ -14,7 +14,7 @@ def pretty_print(book_path):
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {book_path}...")
     print("----------- Word Count -----------")
-    print(f" Found {number_of_words} total words")
+    print(f"Found {number_of_words} total words")
     print("-------- Character Count --------")
 
     char_count = chars_in_book(file_contents)
