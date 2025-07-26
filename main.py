@@ -1,3 +1,5 @@
+import sys
+
 from stats import words_in_book
 from stats import chars_in_book
 from stats import dict_to_list
@@ -29,7 +31,10 @@ def pretty_print(book_path):
 
 
 def main():
-    pretty_print("books/frankenstein.txt")
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+    pretty_print(sys.argv[1])
 
 if __name__ == "__main__":
     main()
